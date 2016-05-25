@@ -1,0 +1,6 @@
+﻿namespace DiagnosticAnalyzersConsole
+{
+    class DiagnosticAnalyzersLibrary
+    {
+    }
+}

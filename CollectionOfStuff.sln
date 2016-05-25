@@ -1,11 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait", "AsyncAwait\AsyncAwait.csproj", "{B4FB8C17-D553-4506-8212-C0FC7A5B7DE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicRestroom", "PublicRestroom\PublicRestroom.csproj", "{EC685508-6410-47D1-A77F-8D112C700D90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketServer", "WebSocketServer\WebSocketServer.csproj", "{93D36CCB-6CFF-4757-8226-45A185C5E844}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFac_InversionOfControl", "AutoFac_InversionOfControl\AutoFac_InversionOfControl\AutoFac_InversionOfControl.csproj", "{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML5_CSS3", "HTML5_CSS3\HTML5_CSS3\HTML5_CSS3.csproj", "{844E6957-DC7A-40AC-B9DE-52E54E292691}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DependencyDemo", "DependencyDemo\DependencyDemo.xproj", "{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "AccessModifiers\AccessModifiers\AccessModifiers.csproj", "{EDDD012B-306D-4EFD-973D-D5111C1D4678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiersLibrary", "AccessModifiers\AccessModifiersLibrary\AccessModifiersLibrary.csproj", "{E3C67D29-0709-46BC-AAC0-7265D54E7694}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +33,30 @@ Global
 		{EC685508-6410-47D1-A77F-8D112C700D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC685508-6410-47D1-A77F-8D112C700D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC685508-6410-47D1-A77F-8D112C700D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D36CCB-6CFF-4757-8226-45A185C5E844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D36CCB-6CFF-4757-8226-45A185C5E844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D36CCB-6CFF-4757-8226-45A185C5E844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D36CCB-6CFF-4757-8226-45A185C5E844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{844E6957-DC7A-40AC-B9DE-52E54E292691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844E6957-DC7A-40AC-B9DE-52E54E292691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844E6957-DC7A-40AC-B9DE-52E54E292691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844E6957-DC7A-40AC-B9DE-52E54E292691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDDD012B-306D-4EFD-973D-D5111C1D4678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDD012B-306D-4EFD-973D-D5111C1D4678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDD012B-306D-4EFD-973D-D5111C1D4678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDD012B-306D-4EFD-973D-D5111C1D4678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C67D29-0709-46BC-AAC0-7265D54E7694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C67D29-0709-46BC-AAC0-7265D54E7694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C67D29-0709-46BC-AAC0-7265D54E7694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C67D29-0709-46BC-AAC0-7265D54E7694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
