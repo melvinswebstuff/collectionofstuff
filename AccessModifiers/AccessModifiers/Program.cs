@@ -112,6 +112,7 @@ namespace AccessModifiers
             TestIndiaBix bix = new TestIndiaBix();
             bix.TestSub("IndiaBIX ");
             bix.TestSub(4.2f);
+            ClassA cA = new ClassA();
             Console.ReadKey();
 
 
