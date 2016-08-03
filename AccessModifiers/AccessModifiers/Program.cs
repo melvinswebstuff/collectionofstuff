@@ -1,121 +1,49 @@
 ﻿using System;
-using AccessModifiersLibrary;
 
 namespace AccessModifiers
 {
-    //class ModifiersBase
-    //{
-    //    static void AAA()
-    //    {
-    //        Console.WriteLine("ModifiersBase AAA");
-    //    }
-    //    public static void BBB()
-    //    {
-    //        Console.WriteLine("ModifiersBase BBB");
-    //    }
-    //    protected static void CCC()
-    //    {
-    //        Console.WriteLine("ModifiersBase CCC");
-    //    }
-    //}
-
-    //class ModifiersDerived : ModifiersBase
-    //{
-    //    public static void XXX()
-    //    {
-    //        //AAA();
-    //        BBB();
-    //        CCC();
-    //    }
-    //}
-
-    //class Modifiers
-    //{
-    //    protected static void AAA()
-    //    {
-    //        Console.WriteLine("Modifiers AAA");
-    //    }
-
-    //    public static void BBB()
-    //    {
-    //        Console.WriteLine("Modifiers BBB");
-    //        AAA();
-    //    }
-    //}
-
-    class AAA
+    public class publicClass<a, b, c, d, e>
     {
-        public int a;
-        void MethodAAA(AAA aaa, BBB bbb)
+        private a _private;
+        protected b _protected;
+        internal c _internal;
+        protected internal d _protectedInternal;
+        public e _public;
+
+        public publicClass()
         {
-            aaa.a = 100;
-            bbb.a = 200;
-        }
-    }
-    class BBB : AAA
-    {
-        void MethodBBB(AAA aaa, BBB bbb)
-        {
-            aaa.a = 100;
-            bbb.a = 200;
-        }
-    }
-    abstract class ZZZ
-    {
 
-        public abstract void m(int a);
-    }
-    abstract class XXX
-    {
-        public abstract void m(int a);
-    }
-    interface YYY
-    {
-        void d(int a);
-    }
-    interface WWW
-    {
-        void w(int a);
-    }
-    class JJJ : ZZZ, WWW, YYY
-    {
-        public override void m(int a)
-        {
-            throw new NotImplementedException();
         }
 
-        public void w(int a)
+        public publicClass(a priv, b prot, c inter, d protinter)
         {
-            throw new NotImplementedException();
-        }
+            _private = priv;
+            _protected = prot;
+            _internal = inter;
+            _protectedInternal = protinter;
 
-        void YYY.d(int a)
-        {
-            throw new NotImplementedException();
+            Console.WriteLine(_private);
+            Console.WriteLine(_protected);
+            Console.WriteLine(_internal);
+            Console.WriteLine(_protectedInternal);
+            Console.WriteLine(_public);
         }
     }
 
-    public class TestIndiaBix
-    {
-        public void TestSub<M>(M arg)
-        {
-            Console.Write(arg);
-        }
-    }
+
+
     class Program
     {
         static void Main(string[] args)
         {
-            //ModifiersDerived.XXX();
-            ClassC classC = new ClassC();
-            classC.MethodClassC();
-            TestIndiaBix bix = new TestIndiaBix();
-            bix.TestSub("IndiaBIX ");
-            bix.TestSub(4.2f);
-            ClassA cA = new ClassA();
+            publicClass<string, string, int, int, bool> pc = new publicClass<string, string, int, int, bool>("a", "b", 1, 2);
+            pc._internal = 9;
+            pc._protectedInternal = 10;
+            pc._public = true;
+
+            Console.WriteLine(pc._internal);
+            Console.WriteLine(pc._protectedInternal);
             Console.ReadKey();
-
-
         }
     }
 }
