@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using System.Collections.Generic;
 
 namespace AutoFac_InversionOfControl
 {
@@ -15,6 +16,17 @@ namespace AutoFac_InversionOfControl
             Container = builder.Build();
 
             WriteDate();
+            WriteHello();
+
+            foreach (Animal animal in new List<Animal>() {
+                new Dog(),
+                new Cat()
+            })
+            {
+                animal.Eat();
+                animal.Sound();
+            }
+
             Console.ReadLine();
         }
 
@@ -24,8 +36,15 @@ namespace AutoFac_InversionOfControl
             // use it, then dispose of the scope.
             using (var scope = Container.BeginLifetimeScope())
             {
-                var writer = scope.Resolve<IDateWriter>();
-                writer.WriteDate();
+                scope.Resolve<IDateWriter>().WriteDate();
+            }
+        }
+
+        public static void WriteHello()
+        {
+            using (var scope = Container.BeginLifetimeScope())
+            {
+                scope.Resolve<IOutput>().Write("Hello World!!!");
             }
         }
     }
