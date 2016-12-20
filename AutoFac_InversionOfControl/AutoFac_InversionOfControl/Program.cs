@@ -13,18 +13,37 @@ namespace AutoFac_InversionOfControl
             var builder = new ContainerBuilder();
             builder.RegisterType<ConsoleOutput>().As<IOutput>();
             builder.RegisterType<TodayWriter>().As<IDateWriter>();
+            builder.RegisterType<Dog>().As<IAnimal>();
+            builder.RegisterType<Cat>().As<IAnimal>();
             Container = builder.Build();
 
             WriteDate();
+            Console.WriteLine("");
             WriteHello();
+            Console.WriteLine("");
 
-            foreach (Animal animal in new List<Animal>() {
+            foreach (IAnimal animal in new List<IAnimal>() {
                 new Dog(),
                 new Cat()
             })
             {
-                animal.Eat();
-                animal.Sound();
+                if (Container.IsRegistered<IAnimal>())
+                {
+                    using (var scope = Container.BeginLifetimeScope())
+                    {
+                        var reader = scope.Resolve<IAnimal>();
+                        
+                    }
+                }
+
+                using (var scope = Container.BeginLifetimeScope())
+                {
+                    scope.Resolve<IAnimal>().Eat();
+                    scope.Resolve<IAnimal>().Sound();
+                }
+                //animal.Eat();
+                //animal.Sound();
+                Console.WriteLine("");
             }
 
             Console.ReadLine();

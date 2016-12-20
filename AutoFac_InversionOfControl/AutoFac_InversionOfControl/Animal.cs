@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace AutoFac_InversionOfControl
 {
-    abstract class Animal
+    interface IAnimal
+    {
+        void Eat();
+        void Sound();
+    }
+    abstract class AnimalBehavior: IAnimal
     {
         public abstract void Eat();
         public virtual void Sound()
@@ -15,7 +20,7 @@ namespace AutoFac_InversionOfControl
         }
     }
 
-    class Dog : Animal
+    class Dog : AnimalBehavior
     {
         public override void Eat()
         {
@@ -27,7 +32,7 @@ namespace AutoFac_InversionOfControl
         }
     }
 
-    class Cat : Animal
+    class Cat : AnimalBehavior
     {
         public override void Eat()
         {
