@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Diagnostics;
 using System.Text;
 
 namespace Enums
@@ -30,12 +29,64 @@ namespace Enums
             Weekend = 2,
             Holiday = 4
         }
+
+
+
+
         static void Main(string[] args)
         {
-            if (DaysOfWeek.Friday == DaysOfWeek.Weekend)
+            for (int i = 0; i < 10; i++)
             {
-
+                TimeStringConcatenation();
+                Console.WriteLine("");
             }
+
+            Console.Read();
+        }
+
+        private static void TimeStringConcatenation()
+        {
+            Stopwatch sw1 = new Stopwatch();
+
+            sw1.Start();
+
+            for (int i = 0; i < 100000; i++)
+            {
+                var s = string.Format("Today is: {0}", DayOfWeek.Friday);
+            }
+            sw1.Stop();
+            Console.WriteLine(sw1.Elapsed);
+            sw1.Restart();
+
+            for (int i = 0; i < 100000; i++)
+            {
+                var s = "Today is: {0}";
+                s += DayOfWeek.Friday;
+            }
+
+            sw1.Stop();
+            Console.WriteLine(sw1.Elapsed);
+            sw1.Restart();
+
+            for (int i = 0; i < 100000; i++)
+            {
+                var s = $"Today is: {DaysOfWeek.Friday}";
+            }
+
+            sw1.Stop();
+            Console.WriteLine(sw1.Elapsed);
+            sw1.Restart();
+
+            for (int i = 0; i < 100000; i++)
+            {
+                StringBuilder s = new StringBuilder();
+                s.AppendFormat("Today is: {0}", DayOfWeek.Friday);
+                var st = s.ToString();
+            }
+
+            sw1.Stop();
+            Console.WriteLine(sw1.Elapsed);
+            sw1.Reset();
         }
     }
 }
