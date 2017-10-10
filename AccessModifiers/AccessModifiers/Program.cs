@@ -40,6 +40,8 @@ namespace AccessModifiers
             set { _public = value; Console.WriteLine(value); }
         }
 
+        public string f => "Look I'm read-only";
+
         public publicClass()
         {
 

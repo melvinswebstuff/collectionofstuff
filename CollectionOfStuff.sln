@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketServer", "WebSocke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFac_InversionOfControl", "AutoFac_InversionOfControl\AutoFac_InversionOfControl\AutoFac_InversionOfControl.csproj", "{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML5_CSS3", "HTML5_CSS3\HTML5_CSS3\HTML5_CSS3.csproj", "{844E6957-DC7A-40AC-B9DE-52E54E292691}"
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DependencyDemo", "DependencyDemo\DependencyDemo.xproj", "{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "AccessModifiers\AccessModifiers\AccessModifiers.csproj", "{EDDD012B-306D-4EFD-973D-D5111C1D4678}"
@@ -20,6 +18,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp", "AndroidApp\AndroidApp.csproj", "{AB83F96A-62F2-4887-AD7B-88052B5A32B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{1F01D682-3383-4900-8651-1575A5C683D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQSend", "RabbitMQ\RabbitMQSend.csproj", "{F8D08448-9ADE-45A2-B7D9-4180F988DEFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQReceive", "RabbitMQReceive\RabbitMQReceive.csproj", "{12FE0ACB-4E97-4AA2-A0C5-79F7BDCC071B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTask", "NewTask\NewTask.csproj", "{18C09CA2-2689-423D-9725-2A8A313D2763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB", "MongoDB\MongoDB.csproj", "{EB1D8AD7-961A-444E-9790-A34E97D04CCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Abstract.Factory", "Pattern.Abstract.Factory\Pattern.Abstract.Factory.csproj", "{0E765F94-E33D-44FE-A2FF-54797123AA4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAndroidApp", "XamarinAndroidApp\XamarinAndroidApp.csproj", "{B4FEAB67-A90E-4A35-AE2B-719DE585CCEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +53,6 @@ Global
 		{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D37B3B0F-3CD3-4EEA-B803-ECC85E5398DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{844E6957-DC7A-40AC-B9DE-52E54E292691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{844E6957-DC7A-40AC-B9DE-52E54E292691}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{844E6957-DC7A-40AC-B9DE-52E54E292691}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{844E6957-DC7A-40AC-B9DE-52E54E292691}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}.Release|Any CPU.Build.0 = Release|Any CPU
@@ -64,6 +70,30 @@ Global
 		{1F01D682-3383-4900-8651-1575A5C683D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F01D682-3383-4900-8651-1575A5C683D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F01D682-3383-4900-8651-1575A5C683D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D08448-9ADE-45A2-B7D9-4180F988DEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D08448-9ADE-45A2-B7D9-4180F988DEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D08448-9ADE-45A2-B7D9-4180F988DEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D08448-9ADE-45A2-B7D9-4180F988DEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FE0ACB-4E97-4AA2-A0C5-79F7BDCC071B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FE0ACB-4E97-4AA2-A0C5-79F7BDCC071B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FE0ACB-4E97-4AA2-A0C5-79F7BDCC071B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FE0ACB-4E97-4AA2-A0C5-79F7BDCC071B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18C09CA2-2689-423D-9725-2A8A313D2763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C09CA2-2689-423D-9725-2A8A313D2763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C09CA2-2689-423D-9725-2A8A313D2763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C09CA2-2689-423D-9725-2A8A313D2763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB1D8AD7-961A-444E-9790-A34E97D04CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB1D8AD7-961A-444E-9790-A34E97D04CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB1D8AD7-961A-444E-9790-A34E97D04CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB1D8AD7-961A-444E-9790-A34E97D04CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E765F94-E33D-44FE-A2FF-54797123AA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E765F94-E33D-44FE-A2FF-54797123AA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E765F94-E33D-44FE-A2FF-54797123AA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E765F94-E33D-44FE-A2FF-54797123AA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FEAB67-A90E-4A35-AE2B-719DE585CCEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FEAB67-A90E-4A35-AE2B-719DE585CCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FEAB67-A90E-4A35-AE2B-719DE585CCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FEAB67-A90E-4A35-AE2B-719DE585CCEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
