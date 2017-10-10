@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using RabbitMQ.Client;
 using System.Threading;
 
@@ -18,11 +15,11 @@ namespace RabbitMQSend
             {
                 using (var channel = connection.CreateModel())
                 {
-                    channel.QueueDeclare(queue: "hello",
-                        durable: false,
-                        exclusive: false,
-                        autoDelete: false,
-                        arguments: null);
+                    channel.QueueDeclare("hello",
+                        false,
+                        false,
+                        false,
+                        null);
 
                     for (int i = 0; i < 10; i++)
                     {
@@ -30,10 +27,10 @@ namespace RabbitMQSend
 
                         var body = Encoding.UTF8.GetBytes(message);
 
-                        channel.BasicPublish(exchange: "",
-                            routingKey: "hello",
-                            basicProperties: null,
-                            body: body);
+                        channel.BasicPublish("",
+                            "hello",
+                            null,
+                            body);
 
                         Console.WriteLine("[x] Sent {0}", message);
                         Thread.Sleep(5000);
