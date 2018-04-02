@@ -31,7 +31,7 @@ namespace AutoFac_InversionOfControl
                 {
                     using (var scope = Container.BeginLifetimeScope())
                     {
-                        var reader = scope.Resolve<IAnimal>();
+                        var reader = scope.Resolve<IEnumerable<IAnimal>>();
                         
                     }
                 }
