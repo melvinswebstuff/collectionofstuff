@@ -38,8 +38,9 @@ namespace AutoFac_InversionOfControl
 
                 using (var scope = Container.BeginLifetimeScope())
                 {
-                    scope.Resolve<IAnimal>().Eat();
-                    scope.Resolve<IAnimal>().Sound();
+                    var a = scope.Resolve<IAnimal>();
+                    a.Eat();
+                    a.Sound();
                 }
                 //animal.Eat();
                 //animal.Sound();
