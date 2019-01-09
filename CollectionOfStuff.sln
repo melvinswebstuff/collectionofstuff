@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait", "AsyncAwait\AsyncAwait.csproj", "{B4FB8C17-D553-4506-8212-C0FC7A5B7DE3}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFac_InversionOfControl"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML5_CSS3", "HTML5_CSS3\HTML5_CSS3\HTML5_CSS3.csproj", "{844E6957-DC7A-40AC-B9DE-52E54E292691}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DependencyDemo", "DependencyDemo\DependencyDemo.xproj", "{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyDemo", "DependencyDemo\DependencyDemo.csproj", "{5FE1E2B4-4315-4DF0-899B-99BAC114D34F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "AccessModifiers\AccessModifiers\AccessModifiers.csproj", "{EDDD012B-306D-4EFD-973D-D5111C1D4678}"
 EndProject
@@ -73,5 +73,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8DD648E-A49A-4BBD-903E-B85340AC5BDF}
 	EndGlobalSection
 EndGlobal
