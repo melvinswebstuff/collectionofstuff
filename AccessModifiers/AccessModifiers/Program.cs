@@ -1,5 +1,4 @@
-﻿using log4net;
-using NLog;
+﻿using NLog;
 using System;
 using System.IO;
 using System.Threading;
@@ -66,13 +65,12 @@ namespace AccessModifiers
 
     class Program
     {
-        private static ILog logger1 = log4net.LogManager.GetLogger(typeof(Program));
         private static ILogger logger2 = NLog.LogManager.GetCurrentClassLogger();
 
         static void Main(string[] args)
         {
             System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
-            TimeSpan log4netTime, nlogTime;
+            TimeSpan nlogTime;
 
             publicClass<string, string, int, int, bool> pc = new publicClass<string, string, int, int, bool>("a", "b", 1, 2);
             pc.myinternal = 9;
@@ -82,18 +80,7 @@ namespace AccessModifiers
             Console.WriteLine(pc.myinternal);
             Console.WriteLine(pc.myprotectedInternal);
 
-            sw.Start();
-
-            for (int i = 0; i < 1; i++)
-            {
-                logger1.Debug("log4net logging");
-                logger1.Info("log4net logging");
-            }
-
-            sw.Stop();
-            log4netTime = sw.Elapsed;
             sw.Restart();
-
 
             for (int i = 0; i < 1; i++)
             {
@@ -104,7 +91,6 @@ namespace AccessModifiers
             sw.Stop();
             nlogTime = sw.Elapsed;
 
-            Console.WriteLine(log4netTime);
             Console.WriteLine(nlogTime);
 
             using (StreamWriter swriter = new StreamWriter(File.Create("StreamWritten.File.txt")))
@@ -120,7 +106,7 @@ namespace AccessModifiers
             //IEnumerable<string> data;
             //data.ToList();//Available under the System.Linq namespace, this is an extension method
 
-
+           
 
 
         }
